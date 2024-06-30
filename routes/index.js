@@ -43,6 +43,7 @@ router.get('/students', auth, admin, adminController.getAllStudents);
 
 // Manage attendance
 router.post('/students-attendance/manage', auth, admin, adminController.manageAttendance);
+
 // CRUD operations on attendance 
 router.post('/students-attendance/create', auth, admin, adminController.createAttendance);
 
