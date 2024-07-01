@@ -10,15 +10,15 @@ const cors = require("cors");
 //   credentials: true,
 //   origin: ["http://localhost:3000"],
 // };
-const corsOptions = {
-  credentials: true,
-  origin: ["https://ams-frontend-ipf0nctjc-adnans-projects-f816479d.vercel.app"],
-};
+// const corsOptions = {
+//   credentials: true,
+//   origin: ["https://ams-frontend-ipf0nctjc-adnans-projects-f816479d.vercel.app"],
+// };
 
 const app = express();
 
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use(
   cors({
     origin: function (origin, callback) {
