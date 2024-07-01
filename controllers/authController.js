@@ -247,7 +247,7 @@ const authController = {
             }
 
             try {
-                const match = RefreshToken.findOne({
+                const match = await RefreshToken.findOne({
                     _id: id,
                     token: originalRefreshToken,
                 });
